@@ -1,0 +1,19 @@
+{
+  "author": "Kevin Michael Schott",
+  "name": "draw-together",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^9.2.5",
+    "tmi.js": "^1.8.5"
+  },
+  "engines": {
+    "node": ">= 16"
+  }
+}
