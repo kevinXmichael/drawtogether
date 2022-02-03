@@ -7,6 +7,11 @@ def gohome():
     print('AxiDraw goes home')
     ad.moveto(0,0)
 
+def shutdown():
+    gohome()
+    print('AxiDraw goes to bed')
+    ad.disconnect()
+
 def main():
     # ad.options.port = 0
     connected = ad.connect()
@@ -14,12 +19,11 @@ def main():
     if not connected:
         sys.exit()
 
-    ad.penup()
-    ad.move(5.08, 5.08)
-    # gohome()
-    # ad.pendown()
+    ad.move(0, 2)
+    ad.line(6,0)
+    ad.line(0,4)
+    ad.line(-6,0)
 
-    # Disconnect it at a suitable time 
-    ad.disconnect()
+    shutdown()
 
 main()
