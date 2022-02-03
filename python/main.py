@@ -24,6 +24,8 @@ def main():
     ad.line(0,4)
     ad.line(-6,0)
 
+    print('current_pos', ad.current_pos())
+    print('turtle_pos', ad.turtle_pos())
     shutdown()
 
 main()
